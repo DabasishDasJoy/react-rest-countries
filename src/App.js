@@ -25,7 +25,22 @@ function Countries() {
     <div>
       <h1>Visit Countries All Over the WORLD!</h1>
       <h3>Available Countries: {countries.length}</h3>
+      {
+        countries.map(country => <Country name={country.name.common} population={country.population}></Country>)
+      }
     </div>
   );
+}
+
+//Country component
+function Country(props) {
+  const {name, population} = props;
+  
+  return (
+    <div>
+      <h3>Name: {name}</h3>
+      <h4>Population: {population}</h4>
+    </div>
+  ); 
 }
 export default App;
