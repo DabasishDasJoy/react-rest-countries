@@ -1,14 +1,16 @@
-import { useEffect, useState } from 'react';
 import './App.css';
+import Countries from './components/Countries/Countries';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header></Header>
       <Countries></Countries>
     </div>
   );
 }
-//countries component
+/* //countries component
 function Countries() {
   //Step 1: Control state
   const [countries, setCountries] = useState([]);
@@ -42,5 +44,5 @@ function Country(props) {
       <h4>Population: {population}</h4>
     </div>
   ); 
-}
+} */
 export default App;
