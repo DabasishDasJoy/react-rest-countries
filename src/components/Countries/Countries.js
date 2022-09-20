@@ -16,6 +16,7 @@ const Countries = () => {
             <h1>Available Countries: {countries.length}</h1>
             <div className='country-container'>
                 {
+                    // set a unique key for props for better performance 
                     countries.map(country => <Country
                         country = {country}
                         key = {country.cca3}
