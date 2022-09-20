@@ -1,5 +1,8 @@
-.county {
+.country {
   background-color: antiquewhite;
   border-radius: 10px;
   margin: 20px;
+}
+img {
+  width: 100px;
 }
